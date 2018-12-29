@@ -1,0 +1,80 @@
+.row {
+	width: 100%;
+	position: relative;
+}
+
+.card {
+	height: 100%;
+	position: absolute;
+
+	.content {
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+
+		.ui-tabs .ui-tabs-nav {
+			margin: 0;
+			padding: 0;
+		}
+
+		.card-tabs {
+			height: 100%;
+			padding: 0 8px;
+			border: none;
+
+			.card-tabs-title {
+				position: relative;
+
+				.tab-more {
+					position: absolute;
+					right: 8px;
+					bottom: 8px;
+					font-size: 12px;
+					cursor: pointer;
+				}
+			}
+
+			&.ui-tabs .ui-tabs-panel {
+				padding: 0;
+			}
+
+			.ui-widget-header {
+				background-color: #fff;
+				border: none;
+				border-bottom: 1px solid #ddd;
+				border-radius: 0 !important;
+			}
+		}
+
+		.card-list {
+			ul {
+				padding: 4px 0;
+				margin: 0;
+				list-style: none;
+				text-align: left;
+				cursor: pointer;
+
+				li {
+					height: 36px;
+					line-height: 36px;
+					width: 100%;
+					display: inline-block;
+					font-size: 14px;
+				}
+
+				.item-icon {
+					display: inline-block;
+					width: 8px;
+					height: 8px;
+					padding-right: 12px;
+					background: url(../images/ul-list.png) no-repeat;
+				}
+
+				.item-time {
+					position: absolute;
+					right: 12px;
+				}
+			}
+		}
+	}
+}

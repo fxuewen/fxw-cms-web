@@ -1,0 +1,81 @@
+.header-container {
+	.weather {
+		width: 100%;
+		height: 40px;
+
+		.content {
+			position: absolute;
+			right: 0;
+			padding-top: 8px;
+			font-size: 12px;
+		}
+	}
+
+	.search {
+		width: 100%;
+		height: 40px;
+
+		.search-group {
+			position: absolute;
+			right: 0;
+		}
+	}
+
+	.nav {
+		height: 50px;
+		width: 100%;
+		position: absolute;
+		padding: 0;
+		margin: 0;
+		bottom: 0;
+		list-style: none; /*在一个声明中设置所有的列表属性*/
+
+		li {
+			float: left;
+			line-height: 40px;
+			text-align: center;
+			position: relative;
+			width: 12.5%;
+
+			a {
+				text-decoration: none;
+				color: #fff;
+				padding: 5px 10px;
+				display: block;
+
+				/* 在一级菜单中，鼠标放上去的样式 */
+				&:hover {
+					color: #fff;
+				}
+			}
+
+			ul {
+				position: absolute; /*防止一级菜单随二级菜单变化而变化*/
+				left: 0px;
+				top: 40px;
+				display: none;
+
+				/* 鼠标放在一级菜单上，显示二级菜单 */
+				li {
+					float: none;
+					text-align: center;
+					margin-top: 2px;
+					background-color: #eee;
+
+					a {
+						width: 80px;
+
+						/* 在二级菜单中，鼠标放上去的样式 */
+						&:hover {
+							background-color: #eee;
+						}
+					}
+				}
+			}
+
+			&:hover ul {
+				display: block;
+			}
+		}
+	}
+}

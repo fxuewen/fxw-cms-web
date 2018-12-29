@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>蔡甸检察院</title>
+    <link href="./assets/css/default.css" rel="stylesheet" type="text/css"/>
+    <link href="./assets/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="./assets/css/header.css" rel="stylesheet" type="text/css"/>
+    <link href="./assets/css/index.css" rel="stylesheet" type="text/css"/>
+    <link href="./assets/css/green.css" rel="stylesheet" type="text/css"/>
+    <link href="./assets/lib/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="main-container green">
+        <include src="./templates/header.html"></include>
+        <div class="content-container">
+            <div class="content-1 row">
+                <div class="card left">
+                    <div class="content">
+                        <div class="card-tabs">
+                            <div class="card-tabs-title">
+                                <ul>
+                                    <li><a href="#tabs-notice">通知公告</a></li>
+                                </ul>
+                                <a class="tab-more" src="#">更多>></a>
+                            </div>
+                            <div class="card-list" id="tabs-notice">
+                                <ul>
+                                    <li>
+                                        <span class="item-icon"></span>
+                                        <a>关于报送三个规定情报的通知</a>
+                                        <span class="item-time">12-19</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card center">
+                    <div class="content">
+                    </div>
+                </div>
+                <div class="card right">
+                    <div class="content">
+                        <div class="card-tabs">
+                            <div class="card-tabs-title">
+                                <ul>
+                                    <li><a href="#tabs-case-news">时政要闻</a></li>
+                                </ul>
+                                <a class="tab-more" src="#">更多>></a>
+                            </div>
+                            <div id="tabs-case-news">
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divide-img">
+                <img src="./assets/images/nv.png">
+            </div>
+            <div class="content-2 row">
+                
+            </div>
+            <div class="divide-img">
+                <img src="./assets/images/fff.png">
+            </div>
+            <div class="content-3 row">
+            
+            </div>
+        </div>
+        <include src="./templates/footer.html"></include>
+    </div>
+    <script src="./assets/lib/include.js"></script>
+    <script src="./assets/lib/jquery-ui-1.12.1/external/jquery.js"></script>
+    <script src="./assets/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $( function() {
+          $( ".card-tabs" ).tabs();
+        } );
+    </script>
+</body>
+</html>

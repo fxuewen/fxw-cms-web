@@ -1,0 +1,40 @@
+@base: rgb(18, 134, 18);
+
+.main-container.green {
+	.header-container {
+		.nav li {
+			background-color: @base;
+		}
+
+		.weather .content {
+			color: @base;
+		}
+	}
+
+	.card {
+		.card-tabs {
+			.ui-tabs-nav {
+				a {
+					border-color: @base !important;
+					background-color: @base !important;
+				}
+			}
+
+			.ui-widget-header {
+				border-bottom: 1px solid @base;
+			}
+		}
+
+		.ui-state-active,
+		.ui-widget-content .ui-state-active,
+		.ui-widget-header .ui-state-active,
+		a.ui-button:active,
+		.ui-button:active,
+		.ui-button.ui-state-active:hover {
+			border: 1px solid @base;
+			background: @base;
+			font-weight: normal;
+			color: #ffffff;
+		}
+	}
+}

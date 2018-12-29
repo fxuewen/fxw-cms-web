@@ -1,0 +1,24 @@
+.main-container.green .header-container .nav li {
+  background-color: #128612;
+}
+.main-container.green .header-container .weather .content {
+  color: #128612;
+}
+.main-container.green .card .card-tabs .ui-tabs-nav a {
+  border-color: #128612 !important;
+  background-color: #128612 !important;
+}
+.main-container.green .card .card-tabs .ui-widget-header {
+  border-bottom: 1px solid #128612;
+}
+.main-container.green .card .ui-state-active,
+.main-container.green .card .ui-widget-content .ui-state-active,
+.main-container.green .card .ui-widget-header .ui-state-active,
+.main-container.green .card a.ui-button:active,
+.main-container.green .card .ui-button:active,
+.main-container.green .card .ui-button.ui-state-active:hover {
+  border: 1px solid #128612;
+  background: #128612;
+  font-weight: normal;
+  color: #ffffff;
+}

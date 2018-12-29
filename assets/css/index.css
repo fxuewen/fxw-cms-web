@@ -1,0 +1,36 @@
+.content-container .content-1 {
+  height: 300px;
+}
+.content-container .content-1 .left {
+  float: left;
+  position: relative;
+  width: 34%;
+}
+.content-container .content-1 .center {
+  float: left;
+  position: relative;
+  width: 33%;
+}
+.content-container .content-1 .center .content {
+  margin: 0 auto;
+  width: 94%;
+}
+.content-container .content-1 .right {
+  float: left;
+  position: relative;
+  width: 33%;
+}
+.content-container .divide-img {
+  width: 100%;
+  position: relative;
+  margin: 8px 0;
+}
+.content-container .divide-img img {
+  width: 100%;
+}
+.content-container .content-2 {
+  height: 300px;
+}
+.content-container .content-3 {
+  height: 300px;
+}

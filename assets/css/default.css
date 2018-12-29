@@ -1,0 +1,66 @@
+.row {
+  width: 100%;
+  position: relative;
+}
+.card {
+  height: 100%;
+  position: absolute;
+}
+.card .content {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.card .content .ui-tabs .ui-tabs-nav {
+  margin: 0;
+  padding: 0;
+}
+.card .content .card-tabs {
+  height: 100%;
+  padding: 0 8px;
+  border: none;
+}
+.card .content .card-tabs .card-tabs-title {
+  position: relative;
+}
+.card .content .card-tabs .card-tabs-title .tab-more {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.card .content .card-tabs.ui-tabs .ui-tabs-panel {
+  padding: 0;
+}
+.card .content .card-tabs .ui-widget-header {
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0 !important;
+}
+.card .content .card-list ul {
+  padding: 4px 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+  cursor: pointer;
+}
+.card .content .card-list ul li {
+  height: 36px;
+  line-height: 36px;
+  width: 100%;
+  display: inline-block;
+  font-size: 14px;
+}
+.card .content .card-list ul .item-icon {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  padding-right: 12px;
+  background: url(../images/ul-list.png) no-repeat;
+}
+.card .content .card-list ul .item-time {
+  position: absolute;
+  right: 12px;
+}
