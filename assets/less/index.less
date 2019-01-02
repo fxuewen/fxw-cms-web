@@ -13,9 +13,68 @@
 			position: relative;
 			width: 33%;
 
-			.content {
-				margin: 0 auto;
+			#banner {
+				position: relative;
 				width: 94%;
+				height: 100%;
+				margin: 0 auto;
+				background-color: #fff;
+				overflow: hidden;
+
+				.banner-bg {
+					position: absolute;
+					width: 100%;
+					bottom: 0;
+					background-color: #000;
+					height: 30px;
+					line-height: 30px;
+					filter: Alpha(Opacity=30);
+					opacity: 0.7;
+					z-index: 1000;
+					cursor: pointer;
+
+					.banner-info {
+						height: 22px;
+						color: #fff;
+						max-width: 60%;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						font-size: 12px;
+						margin-left: 5px;
+						z-index: 1001;
+					}
+				}
+
+				ul {
+					position: absolute;
+					list-style-type: none;
+					filter: Alpha(Opacity=80);
+					opacity: 0.8;
+					z-index: 1002;
+					margin: 0;
+					padding: 0;
+					bottom: 3px;
+					right: 5px;
+				}
+
+				ul li {
+					padding: 0px 8px;
+					float: left;
+					display: block;
+					color: #fff;
+					background: #6f4f67;
+					cursor: pointer;
+					border: 1px solid #333;
+				}
+
+				.banner ul li.on {
+					background-color: #000;
+				}
+
+				.banner_list a {
+					position: absolute;
+				}
 			}
 		}
 
@@ -37,7 +96,7 @@
 	}
 
 	.content-2 {
-		height: 586px;
+		height: 588px;
 
 		.left {
 			float: left;
@@ -71,20 +130,33 @@
 			.row {
 				position: relative;
 				width: 100%;
-				height: 50%;
+				height: 290px;
 
 				.col-2 {
-					float: left;
 					position: relative;
-					width: 50%;
+					width: 49%;
 					height: 100%;
+
+					&.left {
+						float: left;
+						margin-left: 8px;
+					}
+
+					&.right {
+						float: right;
+					}
 				}
+			}
+
+			.row-devide {
+				width: 100%;
+				height: 8px;
 			}
 		}
 	}
 
 	.content-3 {
-		height: 868px;
+		height: 886px;
 
 		.left {
 			float: left;
@@ -118,14 +190,27 @@
 			.row {
 				position: relative;
 				width: 100%;
-				height: 33.3%;
+				height: 290px;
 
 				.col-2 {
-					float: left;
 					position: relative;
-					width: 50%;
+					width: 49%;
 					height: 100%;
+
+					&.left {
+						float: left;
+						margin-left: 8px;
+					}
+
+					&.right {
+						float: right;
+					}
 				}
+			}
+
+			.row-devide {
+				width: 100%;
+				height: 8px;
 			}
 		}
 	}

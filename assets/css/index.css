@@ -11,9 +11,62 @@
   position: relative;
   width: 33%;
 }
-.content-container .content-1 .center .content {
-  margin: 0 auto;
+.content-container .content-1 .center #banner {
+  position: relative;
   width: 94%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  overflow: hidden;
+}
+.content-container .content-1 .center #banner .banner-bg {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #000;
+  height: 30px;
+  line-height: 30px;
+  filter: alpha(opacity=30);
+  opacity: 0.7;
+  z-index: 1000;
+  cursor: pointer;
+}
+.content-container .content-1 .center #banner .banner-bg .banner-info {
+  height: 22px;
+  color: #fff;
+  max-width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  margin-left: 5px;
+  z-index: 1001;
+}
+.content-container .content-1 .center #banner ul {
+  position: absolute;
+  list-style-type: none;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+  z-index: 1002;
+  margin: 0;
+  padding: 0;
+  bottom: 3px;
+  right: 5px;
+}
+.content-container .content-1 .center #banner ul li {
+  padding: 0px 8px;
+  float: left;
+  display: block;
+  color: #fff;
+  background: #6f4f67;
+  cursor: pointer;
+  border: 1px solid #333;
+}
+.content-container .content-1 .center #banner .banner ul li.on {
+  background-color: #000;
+}
+.content-container .content-1 .center #banner .banner_list a {
+  position: absolute;
 }
 .content-container .content-1 .right {
   float: left;
@@ -29,7 +82,7 @@
   width: 100%;
 }
 .content-container .content-2 {
-  height: 586px;
+  height: 588px;
 }
 .content-container .content-2 .left {
   float: left;
@@ -59,16 +112,26 @@
 .content-container .content-2 .right .row {
   position: relative;
   width: 100%;
-  height: 50%;
+  height: 290px;
 }
 .content-container .content-2 .right .row .col-2 {
-  float: left;
   position: relative;
-  width: 50%;
+  width: 49%;
   height: 100%;
 }
+.content-container .content-2 .right .row .col-2.left {
+  float: left;
+  margin-left: 8px;
+}
+.content-container .content-2 .right .row .col-2.right {
+  float: right;
+}
+.content-container .content-2 .right .row-devide {
+  width: 100%;
+  height: 8px;
+}
 .content-container .content-3 {
-  height: 868px;
+  height: 886px;
 }
 .content-container .content-3 .left {
   float: left;
@@ -98,11 +161,21 @@
 .content-container .content-3 .right .row {
   position: relative;
   width: 100%;
-  height: 33.3%;
+  height: 290px;
 }
 .content-container .content-3 .right .row .col-2 {
-  float: left;
   position: relative;
-  width: 50%;
+  width: 49%;
   height: 100%;
+}
+.content-container .content-3 .right .row .col-2.left {
+  float: left;
+  margin-left: 8px;
+}
+.content-container .content-3 .right .row .col-2.right {
+  float: right;
+}
+.content-container .content-3 .right .row-devide {
+  width: 100%;
+  height: 8px;
 }

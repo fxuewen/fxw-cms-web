@@ -1,12 +1,14 @@
 .main-container.green .header-container .nav li {
   background-color: #128612;
 }
+.main-container.green .header-container .nav li.active {
+  background-color: orange;
+}
 .main-container.green .header-container .weather .content {
   color: #128612;
 }
 .main-container.green .card .card-tabs .ui-tabs-nav a {
   border-color: #128612 !important;
-  background-color: #128612 !important;
 }
 .main-container.green .card .card-tabs .ui-widget-header {
   border-bottom: 1px solid #128612;

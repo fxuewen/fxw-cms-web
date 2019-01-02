@@ -1,9 +1,14 @@
 @base: rgb(18, 134, 18);
+@activeColor: orange;
 
 .main-container.green {
 	.header-container {
 		.nav li {
 			background-color: @base;
+
+			&.active {
+				background-color: @activeColor;
+			}
 		}
 
 		.weather .content {
@@ -16,7 +21,8 @@
 			.ui-tabs-nav {
 				a {
 					border-color: @base !important;
-					background-color: @base !important;
+					// color: @base;
+					// background-color: @base !important;
 				}
 			}
 
