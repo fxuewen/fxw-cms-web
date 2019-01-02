@@ -23,12 +23,22 @@
 .card .content .card-tabs .card-tabs-title {
   position: relative;
 }
+.card .content .card-tabs .card-tabs-title .ui-tabs-nav {
+  display: relative;
+}
+.card .content .card-tabs .card-tabs-title .extra {
+  display: inline-block;
+  width: 25px;
+  height: 100%;
+  position: absolute;
+}
 .card .content .card-tabs .card-tabs-title .tab-more {
   position: absolute;
   right: 8px;
   bottom: 8px;
   font-size: 12px;
   cursor: pointer;
+  text-decoration: none;
 }
 .card .content .card-tabs.ui-tabs .ui-tabs-panel {
   padding: 0;
@@ -39,28 +49,38 @@
   border-bottom: 1px solid #ddd;
   border-radius: 0 !important;
 }
-.card .content .card-list ul {
+.card .content .card-list.ui-widget-content ul {
   padding: 4px 0;
   margin: 0;
   list-style: none;
   text-align: left;
   cursor: pointer;
 }
-.card .content .card-list ul li {
-  height: 36px;
-  line-height: 36px;
+.card .content .card-list.ui-widget-content ul li {
+  height: 30px;
+  line-height: 30px;
   width: 100%;
   display: inline-block;
   font-size: 14px;
 }
-.card .content .card-list ul .item-icon {
+.card .content .card-list.ui-widget-content ul li a {
+  text-decoration: none;
+}
+.card .content .card-list.ui-widget-content ul li:hover {
+  color: red;
+}
+.card .content .card-list.ui-widget-content ul li:hover a {
+  color: red;
+  text-decoration: underline;
+}
+.card .content .card-list.ui-widget-content ul .item-icon {
   display: inline-block;
   width: 8px;
   height: 8px;
   padding-right: 12px;
   background: url(../images/ul-list.png) no-repeat;
 }
-.card .content .card-list ul .item-time {
+.card .content .card-list.ui-widget-content ul .item-time {
   position: absolute;
   right: 12px;
 }

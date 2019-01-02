@@ -25,12 +25,24 @@
 			.card-tabs-title {
 				position: relative;
 
+				.ui-tabs-nav {
+					display: relative;
+				}
+
+				.extra {
+					display: inline-block;
+					width: 25px;
+					height: 100%;
+					position: absolute;
+				}
+
 				.tab-more {
 					position: absolute;
 					right: 8px;
 					bottom: 8px;
 					font-size: 12px;
 					cursor: pointer;
+					text-decoration: none;
 				}
 			}
 
@@ -47,32 +59,47 @@
 		}
 
 		.card-list {
-			ul {
-				padding: 4px 0;
-				margin: 0;
-				list-style: none;
-				text-align: left;
-				cursor: pointer;
+			&.ui-widget-content {
+				ul {
+					padding: 4px 0;
+					margin: 0;
+					list-style: none;
+					text-align: left;
+					cursor: pointer;
 
-				li {
-					height: 36px;
-					line-height: 36px;
-					width: 100%;
-					display: inline-block;
-					font-size: 14px;
-				}
+					li {
+						height: 30px;
+						line-height: 30px;
+						width: 100%;
+						display: inline-block;
+						font-size: 14px;
 
-				.item-icon {
-					display: inline-block;
-					width: 8px;
-					height: 8px;
-					padding-right: 12px;
-					background: url(../images/ul-list.png) no-repeat;
-				}
+						a {
+							text-decoration: none;
+						}
 
-				.item-time {
-					position: absolute;
-					right: 12px;
+						&:hover {
+							color: red;
+
+							a {
+								color: red;
+								text-decoration: underline;
+							}
+						}
+					}
+
+					.item-icon {
+						display: inline-block;
+						width: 8px;
+						height: 8px;
+						padding-right: 12px;
+						background: url(../images/ul-list.png) no-repeat;
+					}
+
+					.item-time {
+						position: absolute;
+						right: 12px;
+					}
 				}
 			}
 		}

@@ -29,8 +29,80 @@
   width: 100%;
 }
 .content-container .content-2 {
-  height: 300px;
+  height: 586px;
+}
+.content-container .content-2 .left {
+  float: left;
+  position: relative;
+  width: 28%;
+  height: 100%;
+  background-color: #fff;
+}
+.content-container .content-2 .left .row {
+  overflow: hidden;
+}
+.content-container .content-2 .left .row.top {
+  height: 292px;
+}
+.content-container .content-2 .left .row.middle {
+  height: 230px;
+}
+.content-container .content-2 .left .row.bottom {
+  height: 230px;
+}
+.content-container .content-2 .right {
+  float: left;
+  position: relative;
+  width: 72%;
+  height: 100%;
+}
+.content-container .content-2 .right .row {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+.content-container .content-2 .right .row .col-2 {
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 100%;
 }
 .content-container .content-3 {
-  height: 300px;
+  height: 868px;
+}
+.content-container .content-3 .left {
+  float: left;
+  position: relative;
+  width: 28%;
+  height: 100%;
+  background-color: #fff;
+}
+.content-container .content-3 .left .row {
+  overflow: hidden;
+}
+.content-container .content-3 .left .row.top {
+  height: 292px;
+}
+.content-container .content-3 .left .row.middle {
+  height: 285px;
+}
+.content-container .content-3 .left .row.bottom {
+  height: 230px;
+}
+.content-container .content-3 .right {
+  float: left;
+  position: relative;
+  width: 72%;
+  height: 100%;
+}
+.content-container .content-3 .right .row {
+  position: relative;
+  width: 100%;
+  height: 33.3%;
+}
+.content-container .content-3 .right .row .col-2 {
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 100%;
 }
