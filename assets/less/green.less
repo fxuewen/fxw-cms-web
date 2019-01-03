@@ -1,6 +1,8 @@
-@base: rgb(18, 134, 18);
+@base: #418041;
+@base2: #b7dbb7;
 @activeColor: orange;
 
+// 首页主容器div
 .main-container.green {
 	.header-container {
 		.nav li {
@@ -21,8 +23,6 @@
 			.ui-tabs-nav {
 				a {
 					border-color: @base !important;
-					// color: @base;
-					// background-color: @base !important;
 				}
 			}
 
@@ -41,6 +41,19 @@
 			background: @base;
 			font-weight: normal;
 			color: #ffffff;
+		}
+	}
+
+	.content-2 {
+		.left {
+			.card-list {
+				.row {
+					button {
+						color: @base;
+						background-color: @base2;
+					}
+				}
+			}
 		}
 	}
 }
